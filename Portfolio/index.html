@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subham's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="desktop-menu">
+                <a href="#">Portfolio</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#">Portfolio</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h3>Hey I'm Subham</h3>
+                <div class="typewriter">
+                    I'm a <span id="typewriter-text"></span><span class="cursor">|</span>
+                </div>
+                <p>
+                    I'm Subham Rakshit, a passionate web developer with a knack for creating visually appealing and highly functional websites. With skills in HTML, CSS, JavaScript, and a variety of other technologies, I strive to bring ideas to life through clean, efficient code.
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/Subham0822">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100092511795652">
+                        <i data-lucide="facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/subham-rakshit-a96323290/">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="https://x.com/subharnava">
+                        <i data-lucide="twitter"></i>
+                    </a>
+                </div>
+                <button class="hire-btn">Hire me</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/main.png" alt="Profile" class="bounce-slow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>SKILLS</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i data-lucide="file-code" style="color: #E34F26;"></i>
+                </div>
+                <h3>HTML</h3>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i data-lucide="palette" style="color: #1572B6;"></i>
+                </div>
+                <h3>CSS</h3>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i data-lucide="file-json" style="color: #F7DF1E;"></i>
+                </div>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i data-lucide="brain-circuit" style="color: #276DC3;"></i>
+                </div>
+                <h3>R</h3>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i data-lucide="code" style="color: #3776AB;"></i>
+                </div>
+                <h3>Python</h3>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i data-lucide="file-code-2" style="color: #A8B9CC;"></i>
+                </div>
+                <h3>C</h3>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i data-lucide="database" style="color: #4479A1;"></i>
+                </div>
+                <h3>MySQL</h3>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i data-lucide="braces" style="color: #777BB4;"></i>
+                </div>
+                <h3>PHP</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>PROJECTS</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="images/alumni.png" alt="Alumni Portal">
+                <h3>Alumni Portal</h3>
+                <p>An alumni portal website connects former students, facilitating networking, job opportunities, donation portal, optimised search engine and event management for a thriving alumni community.</p>
+                <a href="http://hackheritage.sabyasachiganguli.com/">View Website →</a>
+            </div>
+            <div class="project-card">
+                <img src="images/notes.png" alt="Notes Master">
+                <h3>Notes Master</h3>
+                <p>Notes Master is a user-friendly platform designed to help students efficiently generate, organize, and access study materials, including summaries, flashcards, and notes.</p>
+                <a href="http://techrangers.sabyasachiganguli.com/">View Website →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <h2>RESUME</h2>
+        <p>Get a detailed view of my professional background and skills by downloading my resume.</p>
+        <a href="resume.pdf" download class="download-btn">
+            <i data-lucide="download"></i> Download Resume
+        </a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>CONTACT INFO</h2>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <h3>Name:</h3>
+                <p>SUBHAM RAKSHIT</p>
+            </div>
+            <div class="contact-item">
+                <h3>Phone:</h3>
+                <a href="tel:+917980756658">
+                    <i data-lucide="phone"></i> +91 7980756658
+                </a>
+            </div>
+            <div class="contact-item">
+                <h3>Email:</h3>
+                <a href="mailto:rwik0822@gmail.com">
+                    <i data-lucide="mail"></i> rwik0822@gmail.com
+                </a>
+            </div>
+            <div class="contact-item">
+                <h3>Location:</h3>
+                <a href="https://www.google.com/maps/search/?api=1&query=Kolkata,India" target="_blank">
+                    <i data-lucide="map-pin"></i> Kolkata, India
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Subham Rakshit. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
